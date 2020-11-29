@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid19 Dashboard</title>
+    <link rel="stylesheet" href="styles/css/basic.css"/>
+    <link rel="stylesheet" href="styles/css/covid19-dashboard.css"/>
+    <link rel="stylesheet" href="fonts/font-awesome/css/all.css" />
+    
+</head>
+<body>
+    <div class="wrapper">
+
+
+        <div class="header-container">
+            <div class="header">
+                <div class="site-logo" onclick="location.href='./'" title="imasha">
+                    <img src="images/site-assets/display-image.jpg" alt="imasha" style="border-radius: 50px;">
+                    <h1>imasha</h1>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="covid-dashboard-container">
+            <img src="images/site-assets/covid-logo.png" alt="">
+            <h1>Covid19 Latest Updates</h1>
+            <h2>Latest Updated : <span id="covid-date"></span></h2>
+            <div class="covid-dashboard">
+                <div class="local-updates">
+                    <p>Local Updates - Sri Lanka</p>
+                    <div class="sections">
+                        <div class="top">
+                            <div style="background-color: rgb(128, 65, 211);">
+                                <h2>Total Cases</h2>
+                                <h1 id="covid-total-cases"></h1>
+                            </div>
+                            <div style="background-color: rgb(83, 207, 93);">
+                                <h2>Recovered Cases</h2>
+                                <h1 id="covid-recovered"></h1>
+                            </div>
+                            <div style="background-color: rgb(65, 120, 221);">
+                                <h2>Active Cases</h2>
+                                <h1 id="covid-active-cases"></h1>
+                            </div>
+                            <div style="background-color: rgb(214, 67, 67);">
+                                <h2>Total Deaths</h2>
+                                <h1 id="covid-deaths"></h1>
+                            </div>
+                        </div>
+                        <div class="bottom">
+           
+                        </div>
+                    </div>
+                </div>
+                <div class="global-updates">
+                    <p>Global Updates</p>
+                    <div class="sections">
+                     <div>
+                         <h2>Total Cases</h2>
+                         <h1 id="global-total-cases"></h1>
+                     </div>
+                     <div>
+                         <h2>Recovered Cases</h2>
+                         <h1 id="global-recovered"></h1>
+                     </div>
+                     <div>
+                         <h2>Total Deaths</h2>
+                         <h1 id="global-deaths"></h1>
+                     </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <div class="section-one">
+
+            </div>
+            <div class="section-two">
+                <h1>Designed by</h1>
+                <img src="images/site-assets/light-logo.png" alt="logo">
+                <p id="right">Copyright ©2020 imasha. All rights reserved.</p>
+                <p id="right" style="margin-top: 0px;">All icons and images are property of their respective owners.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="scripts/jquery/jquery-3.5.1.min.js"></script>
+    <script src="scripts/javascript/covid19-dashboard.js"></script>
+
+</body>
+</html>
