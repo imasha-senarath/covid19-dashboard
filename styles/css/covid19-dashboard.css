@@ -4,6 +4,7 @@
     margin-right: auto;
     margin-top: 30px;
     text-align: center;
+    height: 600px;
 }
 
 .covid-dashboard-container img{
@@ -45,11 +46,15 @@
     color: white;
 }
 
+.covid-dashboard .local-updates .sections h1{
+    font-size: 30px;
+}
+
 .covid-dashboard .local-updates .top{
     display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-columns: 23% 23% 23% 23%;
     justify-content: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .covid-dashboard .local-updates .top div{
@@ -68,7 +73,7 @@
 
 .covid-dashboard .global-updates .sections{
     display: grid;
-    grid-template-columns: 250px 250px 250px;
+    grid-template-columns: 31% 31% 31%;
     justify-content: center;
     justify-content: space-around;
 }
@@ -84,3 +89,102 @@
     font-weight: 500;
     color: black;
 }
+
+.covid-dashboard .global-updates .sections h1{
+    font-size: 30px;
+}
+
+
+
+/* ##################################### Start of Max-Width: 1200px ##################################### */
+
+@media only screen and (max-width: 1200px) {   
+
+}
+
+/* ##################################### End of Max-Width: 1200px ##################################### */
+
+
+
+/* ##################################### Start of Max-Width: 992px ##################################### */
+
+@media only screen and (max-width: 992px) {
+
+}
+
+/* ##################################### End of Max-Width: 992px ##################################### */
+
+
+
+/* ##################################### start of Max-Width: 768px ##################################### */
+
+@media only screen and (max-width: 768px) {
+    .covid-dashboard-container{
+        height: auto;
+    }
+
+    .covid-dashboard .local-updates .sections h2{
+        font-size: 15px;
+    }
+    
+    .covid-dashboard .local-updates .sections h1{
+        font-size: 25px;
+    }
+
+    .covid-dashboard .global-updates .sections h2{
+        font-size: 15px;
+    }
+    
+    .covid-dashboard .global-updates .sections h1{
+        font-size: 25px;
+    }
+
+    .covid-dashboard-container img{
+        width: 35px;
+        margin-bottom: -8px;
+    }
+    
+    .covid-dashboard-container h1{
+        font-size: 28px;
+    }
+}
+
+/* ##################################### End of Max-Width: 768px ##################################### */
+
+
+
+/* ##################################### Start of Max-Width: 600px ##################################### */
+
+@media only screen and (max-width: 600px) {
+    .covid-dashboard .local-updates .top{
+        display: grid;
+        grid-template-columns: 47% 47%;
+        justify-content: center;
+        justify-content: space-around;
+    }
+
+    .covid-dashboard-container img{
+        width: 28px;
+        margin-right: 5px;
+        margin-bottom: -6px;
+    }
+    
+    .covid-dashboard-container h1{
+        font-size: 20px;
+    }
+
+    .covid-dashboard-container h2{
+        margin-top: 10px;
+    }
+
+    .covid-dashboard .global-updates .sections{
+        display: grid;
+        grid-template-columns: 90%;
+    }
+
+    .covid-dashboard .global-updates .sections div{
+       margin-bottom: 20px;
+    }
+}
+
+/* ##################################### End of Max-Width: 600px ##################################### */
